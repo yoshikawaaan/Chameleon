@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b06a956-d2c9-4d8c-9c20-93d2ba73bc5d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Bishop/Assets/Scripts/CharacterScripts/PlayerScripts/PlayerControler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShadowSkillControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Bishop/Assets/Scripts/CharacterScripts/PlayerScripts/PlayerMover.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightsRayControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Bishop/Assets/Scripts/CharacterScripts/PlayerScripts/IPlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.3.0/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Project_Bishop/Assets/Scripts/CharacterScripts/PlayerScripts/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamaraControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/Test.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Shaders/Test.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IPlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/ShadowPick.shader" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/SHD.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LightsRayControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShadowSkillControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/HolePrepare.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/Hole.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/Blue.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/red.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/blue.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/green.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/Masked2.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/Masked.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/MaskedSurfaceShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Materials/Boolean/Shaders/Mask.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamaraControler.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cD69RQnSuhqWYOlX9G9ZNLPqEm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b06a956-d2c9-4d8c-9c20-93d2ba73bc5d" name="Default Changelist" comment="" />
+      <created>1590050685649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590050685649</updated>
+      <workItem from="1590050711428" duration="1019000" />
+      <workItem from="1590078750555" duration="7850000" />
+      <workItem from="1590159845085" duration="656000" />
+      <workItem from="1590176922601" duration="1584000" />
+      <workItem from="1590216625097" duration="1144000" />
+      <workItem from="1590221520690" duration="9509000" />
+      <workItem from="1591107644323" duration="376000" />
+      <workItem from="1591160868292" duration="2000" />
+      <workItem from="1591279745458" duration="122000" />
+      <workItem from="1591791958363" duration="10305000" />
+      <workItem from="1592240420699" duration="6000" />
+      <workItem from="1592240494084" duration="2708000" />
+      <workItem from="1592311852454" duration="6038000" />
+      <workItem from="1592590334460" duration="13182000" />
+      <workItem from="1593024215232" duration="5707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="229" y="89" key="SettingsEditor" timestamp="1592240756953">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1592240756953" />
+  </component>
+</project>
