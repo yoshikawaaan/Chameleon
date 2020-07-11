@@ -1554,6 +1554,7 @@ GameObject:
   - component: {fileID: 5522208248400506714}
   - component: {fileID: 5522208248400506695}
   - component: {fileID: 5522208248400506712}
+  - component: {fileID: 1465763856434474391}
   - component: {fileID: 5522208248400506713}
   - component: {fileID: 5522208248400506694}
   m_Layer: 0
@@ -1608,6 +1609,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1465763856434474391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5522208248400506715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6bc0daf28ac47aab4a0483076e5a3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5522208248400506713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,7 +1633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bd3bc6be68b4bd0ad801825b07b3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCamaraControler: {fileID: 0}
   moveSpeed: 150
+  runSpeed: 500
 --- !u!114 &5522208248400506694
 MonoBehaviour:
   m_ObjectHideFlags: 0

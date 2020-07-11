@@ -1,23 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerCamaraControler : MonoBehaviour
 {
     //attach to player
+
+
+    [SerializeField] private Transform playerTransform = null;
+    [SerializeField] private Transform pivotTransform = null;
+    [SerializeField] private Camera playerCamera = null;
     
-    
-    [SerializeField]private Transform playerTransform;
-    [SerializeField]private Transform pivotTransform;
-    [SerializeField]private Camera playerCamera;
-    
-    [SerializeField] private float cameraYaxisSpeed = 100.0f;
-    [SerializeField] private float cameraXaxisSpeed = 100.0f;
-    [SerializeField] private float cameraMoveSpeed = 1.0f;
-    [SerializeField] private float marginRange = 0.0f;
+    [SerializeField] private float cameraYaxisSpeed = 5.0f;
+    [SerializeField] private float cameraXaxisSpeed = 10.0f;
+    [SerializeField] private float cameraMoveSpeed = 5.0f;
+    [SerializeField] private float marginRange = 0.5f;
+    [SerializeField] private float angleRange = 60.0f;
 
     private float mouseX, mouseY;
-    
     
     public Camera PlayerCamera
     {
@@ -27,17 +28,28 @@ public class PlayerCamaraControler : MonoBehaviour
 
     void Start()
     {
+        SetUpCamera();
+    }
+
+    private void SetUpCamera()
+    {
+        //Inspector上で設定しなかった場合のnullチェックと設定
         if (playerCamera == null)
         {
-            Debug.Log("Please set playerCamera!!");
+            Debug.Log("Warning: Please set playerCamera.");
             Debug.Log("playerCamera setted Camera.main, Temporary.");
             playerCamera = GetComponentInChildren<Camera>();
             if (playerCamera == null)
                 playerCamera = Camera.main;
+            if (playerCamera == null)
+            {
+                Debug.Log("Error: PlayerCamera Setting is Failed.");
+                return;
+            }
         }
-
+        
+        playerCamera.transform.localRotation = Quaternion.Euler(0, 0, 0);
     }
-
     void Update()
     {
         mouseX = Input.GetAxis("Mouse X");
@@ -46,21 +58,40 @@ public class PlayerCamaraControler : MonoBehaviour
     
     void FixedUpdate()
     {
-        Vector3 tmp = Vector3.Scale(playerCamera.transform.forward , new Vector3(1, 0, 1)).normalized;
-        Debug.Log(tmp);
-        //プレイヤーとの距離を一定に保つ
-        //MoveCamera();
-        RotateCamera();
-        UpdateCamera();
+        RotateCamera(angleRange);
+        MoveCamera();
     }
 
-    void RotateCamera()
+    void RotateCamera(float angleLimit)
     {
-        transform.Rotate(0, mouseX * cameraXaxisSpeed, 0);
-        pivotTransform.Rotate(mouseY * -cameraYaxisSpeed, 0, 0);
-
+        //横回転
+        transform.Rotate(0.00f, mouseX * cameraXaxisSpeed, 0.00f);
+        
+        //縦回転
+        pivotTransform.Rotate(mouseY * -cameraYaxisSpeed, 0.00f, 0.00f);
+        
+        //縦回転制限範囲をオーバーしたら修正する。
+        float upAngleLimit = angleLimit;//上方向制限角度
+        float downAngleLimit = 360.0f - angleLimit;//下方向制限角度
+        float pivotAngleX = pivotTransform.localEulerAngles.x;
+        
+        if (pivotAngleX > upAngleLimit && pivotAngleX < 90)
+            pivotAngleX = upAngleLimit;
+        else if (pivotAngleX < downAngleLimit && pivotAngleX > 270)
+            pivotAngleX = downAngleLimit;
+        
+        /*
+        EulerAnglesでは丸め込み誤差が出る(?)
+        xだけ上記if文で変更してもy,zで0.05前後の誤差が発生した
+        旧処理：pivotTransform.localEulerAngles = pivotEulerAngles;
+        以下のようにVector3.zeroで誤差がないようにする
+        */
+        
+        Vector3 pivotAngles = Vector3.zero;
+        pivotAngles.x = pivotAngleX;
+        pivotTransform.localEulerAngles = pivotAngles;
     }
-    void UpdateCamera()
+    void MoveCamera()
     {
         Vector3 toPlayerVec = playerTransform.position - transform.position;
         float sqrLength = toPlayerVec.sqrMagnitude;

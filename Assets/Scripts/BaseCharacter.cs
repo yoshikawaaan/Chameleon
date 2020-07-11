@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseCharacter : MonoBehaviour
+public class BaseCharacter
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private float _maxHealthPoint;
+	private float _healthPoint;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	
+	protected void SetMaxHealthPoint(float maxHealth)
+	{
+		_maxHealthPoint = maxHealth;
+	}
+	protected void SetHealthPoint(float health)
+	{
+		_healthPoint = health;
+		if (_healthPoint > _maxHealthPoint)
+			_healthPoint = _maxHealthPoint;
+	}
+	protected void CalculateHealthPoint(float delta)
+	{
+		_healthPoint += delta;
+	}
 }
